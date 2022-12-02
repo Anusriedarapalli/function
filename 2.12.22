@@ -1,0 +1,103 @@
+#way 1
+def big(a,b):
+    if a>b:
+        print(a,'is big')
+    else:
+        print(b,'is big')
+a=int(input())
+b=int(input())
+big(a,b)
+output:
+#way 2
+def big(a,b):
+    if a>b:
+        return ' a is big'
+    else:
+        return 'b is big'
+a=int(input('a:'))
+b=int(input('b:'))
+print(big(a,b))
+output:a=10,b=15
+       big=15       
+#way 3
+def big(a,b):
+    if a>b:
+        return True
+    else:
+        return False
+a=int(input())
+b=int(input())
+if(big(a,b)):
+    print(a,'is big')
+else:
+    print(b,'is big')
+ output:a=20,b=15 true   
+         a is big
+ 
+ 
+ #way1
+    def vote(age):
+    if v>=18:
+        print('Yes')
+    else:
+        print('No')
+age=int(input('Enter age:'))
+vote(age)
+#way 2
+def vote(age):
+    if age>=18:
+        return 'Yes'
+    else:
+        return 'No'
+age=int(input('Enter age:'))
+print(vote(age))
+#way 3
+def vote(age):
+    if age>=18:
+        return True
+    else:
+        return False
+age=int(input('Enter age:'))
+if(vote(age)):
+    print('Yes')
+else:
+    print('No')
+    
+        
+    
+    
+ #way 1
+def leap(y):
+    if y%4==0 and y%100!=0:
+        print('Yes')
+    elif y%400==0:
+        print('Yes')
+    else:
+        print('No')
+y=int(input('Enter Year:'))
+leap(y)
+
+#way 2
+def leap(y):
+    if y%4==0 and y%100!=0:
+        return 'Yes'
+    elif y%400==0:
+        return 'Yes'
+    else:
+        return 'No'
+y=int(input('Enter Year:'))
+print(leap(y))
+
+#way 3
+def leap(y):
+    if y%4==0 and y%100!=0:
+        return True
+    elif y%400==0:
+        return True
+    else:
+        return False
+y=int(input('Enter Year:'))
+if(leap(y)):
+    print('Yes')
+else:
+    print('No')
